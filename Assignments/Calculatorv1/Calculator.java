@@ -7,18 +7,10 @@ public class Calculator {
             for (int i = 1; i < inputs.length; i += 2) {
                 double op1 = inputs[i+1];
                 switch (args[i]) {
-                    case "+":
-                        input = input + op1;
-                        break;
-                    case "-":
-                        input = input - op1;
-                        break;
-                    case "*":
-                        input = input * op1;
-                        break;
-                    case "/":
-                        input = input / op1;
-                        break;
+                    case "+" -> input = input + op1;
+                    case "-" -> input = input - op1;
+                    case "*" -> input = input * op1;
+                    case "/" -> input = input / op1;
                 }
                 System.out.println(input);
             }
