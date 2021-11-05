@@ -28,6 +28,6 @@ public class GenericStack extends GenericCollection implements Stack {
 
     @Override
     public Object top() {
-        return values[current_size];
+        return values[current_size-1];
     }
 }
