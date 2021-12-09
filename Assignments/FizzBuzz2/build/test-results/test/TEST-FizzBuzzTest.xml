@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FizzBuzzTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-12-09T22:33:19" hostname="lettera-desktop" time="0.025">
+  <properties/>
+  <testcase name="fizzBuzzesToOutputStream()" classname="FizzBuzzTest" time="0.019"/>
+  <testcase name="numberToFizzBuzz()" classname="FizzBuzzTest" time="0.001"/>
+  <testcase name="numberToBuzz()" classname="FizzBuzzTest" time="0.0"/>
+  <testcase name="numberToFizz()" classname="FizzBuzzTest" time="0.001"/>
+  <testcase name="numberToString()" classname="FizzBuzzTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

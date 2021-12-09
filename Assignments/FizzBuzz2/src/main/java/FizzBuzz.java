@@ -1,12 +1,28 @@
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 public class FizzBuzz {
 
-    public String convert(int i) {
-        if (i%3 == 0) {
-            return "Fizz";
+    public String numberToFizzBuzz(int number) {
+        String conversionResult = "";
+
+        if (number % 3 == 0) {
+            conversionResult += "Fizz";
         }
-        if (i%5 == 0) {
-            return "Buzz";
+        if (number % 5 == 0) {
+            conversionResult += "Buzz";
         }
-        return String.valueOf(i);
+
+        if (conversionResult.equals("")) {
+            return String.valueOf(number);
+        }
+
+        return conversionResult;
+    }
+
+    public void printUntil(int number) {
+        System.out.println(IntStream.range(1, number).
+                mapToObj(this::numberToFizzBuzz).
+                collect(Collectors.joining(", ")));
     }
 }
