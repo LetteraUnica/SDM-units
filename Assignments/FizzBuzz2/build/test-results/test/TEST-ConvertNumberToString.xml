@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ConvertNumberToString" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-12-09T19:28:27" hostname="lettera-desktop" time="0.019">
+  <properties/>
+  <testcase name="test_Buzz()" classname="ConvertNumberToString" time="0.016"/>
+  <testcase name="test_Fizz()" classname="ConvertNumberToString" time="0.001"/>
+  <testcase name="test_1()" classname="ConvertNumberToString" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
