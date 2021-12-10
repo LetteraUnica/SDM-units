@@ -38,7 +38,7 @@ public class FizzBuzzTest {
         ByteArrayOutputStream myOutputStream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(myOutputStream));
 
-        fizzBuzz.printUntil(16);
+        fizzBuzz.printFizzBuzzesUntil(16);
 
         String fizzBuzzes = "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz\n";
         assertEquals(fizzBuzzes, myOutputStream.toString());

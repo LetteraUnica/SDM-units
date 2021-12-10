@@ -1,15 +1,16 @@
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class FizzBuzz {
 
     public String numberToFizzBuzz(int number) {
         String conversionResult = "";
 
-        if (number % 3 == 0) {
+        if (isMultipleOf(number, 3)) {
             conversionResult += "Fizz";
         }
-        if (number % 5 == 0) {
+        if (isMultipleOf(number, 5)) {
             conversionResult += "Buzz";
         }
 
@@ -20,9 +21,17 @@ public class FizzBuzz {
         return conversionResult;
     }
 
-    public void printUntil(int number) {
-        System.out.println(IntStream.range(1, number).
-                mapToObj(this::numberToFizzBuzz).
+    private boolean isMultipleOf(int number, int divisor) {
+        return number % divisor == 0;
+    }
+
+    public void printFizzBuzzesUntil(int number) {
+        System.out.println(fizzBuzzesStreamUntil(number).
                 collect(Collectors.joining(", ")));
+    }
+
+    private Stream<String> fizzBuzzesStreamUntil(int number) {
+        return IntStream.range(1, number).
+                mapToObj(this::numberToFizzBuzz);
     }
 }
